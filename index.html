@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid India Tracker in JavaScript</title>
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class = "container-fluid p-5 bg-light text-center my-3" >
+    <h1>Covid-19 India Tracker</h1>
+    <h5 class = "text-muted">Open Source Project for Covid-19 Cases in India</h5>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center">
+    <div class="col-3 text-warning">
+        <h5>Confirmed</h5>
+        <p id="confirmed" ></p>
+    </div>    
+    <div class="col-3 text-success">
+        <h5>Actives</h5>
+        <p id="active" ></p>
+    </div>    
+    <div class="col-3 text-info">
+        <h5>Recovered</h5>
+        <p id="recovered" ></p>
+    </div>  
+    <div class="col-3 text-danger">
+        <h5>Decreased</h5>
+        <p id="deaths"></p>
+    </div>  
+ </div>
+
+ <canvas id="myChart"></canvas>
+</div>
+    
+</body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+</html>
