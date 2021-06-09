@@ -12,5 +12,13 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samiksha-kumari/covid19-India-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samiksha-kumari/covid19-India-tracker/issues"
+  },
+  "homepage": "https://github.com/samiksha-kumari/covid19-India-tracker#readme",
   "description": ""
 }
