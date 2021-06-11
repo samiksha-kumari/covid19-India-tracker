@@ -41,13 +41,55 @@ deaths.shift();
   let deathData = document.querySelectorAll('#deaths');
    deathData[0].append(total_deaths);
 
+  
+  // let confirm = document.querySelector('.text-warning')
+  // confirm.addEventListener('click', e => {
+  //   console.log('confirmed capture')
+  // }, {capture : true})
+
+  // let active  = document.querySelector('.text-success')
+  // active.addEventListener('click', e => {
+  //   console.log('active capture')
+  // }, {capture : true})
+
+  // let recover = document.querySelector('.text-info')
+  // recover.addEventListener('click', e => {
+  //   console.log('recovered capture')
+  // }, {capture : true})
+
+  // let death = document.querySelector('.text-danger')
+  // death.addEventListener('click', e => {
+  //   console.log('decreased capture')
+  // }, {capture : true})
+
+  // let divs = document.querySelectorAll('.row')
+  // divs.forEach(div => {
+  //   div.addEventListener("click", () => {
+  //     console.log('captured') 
+  //   })
+  // })
+
+  let countEvent;
+  document.querySelector('.row').addEventListener("click", function() {
+    countEvent = document.getElementById("counting").value;
+    countEvent++;
+    document.getElementById("counting").value = countEvent;
+
+  })
+  document.querySelector('.chart').addEventListener("click", function() {
+    countEvent = document.getElementById("counting").value;
+    countEvent++;
+    document.getElementById("counting").value = countEvent;
+
+  })
 
    let myChart = document.getElementById('myChart').getContext('2d');
    let chart = new Chart(myChart, {
        type: 'bar',
        data: {
            labels: state,
-        datasets: [{
+        datasets: [
+          {
             label: 'Confirmed Cases',
             data: confirmed,
             backgroundColor: '#f1c40f',
@@ -66,9 +108,16 @@ deaths.shift();
         backgroundColor: '#e74c3c',
         minBarLength: 100
     }]
-       }
+       },
+       options: {}
    })
 }
+
+
+// let chart = document.querySelector('.chart')
+// chart.addEventListener('click', e => {
+//   console.log('chart capture')
+// }, {capture : true})
 
 
 
